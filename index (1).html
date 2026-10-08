@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeMyTrip Clone - Flights, Hotels, Holidays</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <header class="navbar">
+        <h1 class="logo">make<span>my</span>trip</h1>
+        <nav>
+            <a href="#">Flights</a>
+            <a href="#">Hotels</a>
+            <a href="#">Holidays</a>
+            <a href="#">Trains</a>
+            <a href="#">Buses</a>
+            <a href="#">Cabs</a>
+        </nav>
+        <a href="#" class="login-btn">Login / Signup</a>
+    </header>
+
+    <!-- ========== HERO + FLIGHT SEARCH ========== -->
+    <section class="hero">
+        <h2>Book Flights, Hotels and Holidays</h2>
+        <p>Simple. Fast. Affordable.</p>
+
+        <div class="search-box">
+
+            <!-- service tabs -->
+            <div class="tabs">
+                <a href="#" class="tab active">✈ Flights</a>
+                <a href="#" class="tab">🏨 Hotels</a>
+                <a href="#" class="tab">🌴 Holidays</a>
+                <a href="#" class="tab">🚆 Trains</a>
+                <a href="#" class="tab">🚌 Buses</a>
+            </div>
+
+            <!-- trip type -->
+            <div class="trip-type">
+                <label><input type="radio" name="trip" checked> One Way</label>
+                <label><input type="radio" name="trip"> Round Trip</label>
+                <label><input type="radio" name="trip"> Multi City</label>
+            </div>
+
+            <!-- flight form -->
+            <form>
+                <div class="form-row">
+                    <div class="field">
+                        <label>From</label>
+                        <input type="text" placeholder="Delhi (DEL)">
+                    </div>
+                    <div class="field">
+                        <label>To</label>
+                        <input type="text" placeholder="Mumbai (BOM)">
+                    </div>
+                    <div class="field">
+                        <label>Departure</label>
+                        <input type="date">
+                    </div>
+                    <div class="field">
+                        <label>Return</label>
+                        <input type="date">
+                    </div>
+                    <div class="field">
+                        <label>Travellers</label>
+                        <select>
+                            <option>1 Traveller</option>
+                            <option>2 Travellers</option>
+                            <option>3 Travellers</option>
+                            <option>4 Travellers</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label>Class</label>
+                        <select>
+                            <option>Economy</option>
+                            <option>Premium Economy</option>
+                            <option>Business</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="search-btn">SEARCH FLIGHTS</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ========== OFFERS ========== -->
+    <section class="section">
+        <h2 class="section-title">Offers For You</h2>
+        <div class="cards">
+            <div class="card offer">
+                <h3>Flat 12% OFF</h3>
+                <p>On domestic flights using card payments.</p>
+                <a href="#">Book Now</a>
+            </div>
+            <div class="card offer">
+                <h3>Up to 40% OFF</h3>
+                <p>On top hotels across India.</p>
+                <a href="#">Book Now</a>
+            </div>
+            <div class="card offer">
+                <h3>Holiday Deals</h3>
+                <p>Save big on Goa, Kerala and Manali packages.</p>
+                <a href="#">Book Now</a>
+            </div>
+            <div class="card offer">
+                <h3>Free Cancellation</h3>
+                <p>On selected hotels. Plan without worry.</p>
+                <a href="#">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== HOTEL SEARCH ========== -->
+    <section class="section gray">
+        <h2 class="section-title">Find Your Perfect Hotel</h2>
+        <div class="hotel-box">
+            <form>
+                <div class="form-row">
+                    <div class="field">
+                        <label>City / Location</label>
+                        <input type="text" placeholder="Goa">
+                    </div>
+                    <div class="field">
+                        <label>Check-In</label>
+                        <input type="date">
+                    </div>
+                    <div class="field">
+                        <label>Check-Out</label>
+                        <input type="date">
+                    </div>
+                    <div class="field">
+                        <label>Rooms &amp; Guests</label>
+                        <select>
+                            <option>1 Room, 2 Guests</option>
+                            <option>1 Room, 3 Guests</option>
+                            <option>2 Rooms, 4 Guests</option>
+                            <option>3 Rooms, 6 Guests</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="search-btn">SEARCH HOTELS</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ========== POPULAR DESTINATIONS ========== -->
+    <section class="section">
+        <h2 class="section-title">Popular Destinations</h2>
+        <div class="cards">
+            <div class="card dest goa">
+                <h3>Goa</h3>
+                <p>Starting from ₹4,999</p>
+            </div>
+            <div class="card dest manali">
+                <h3>Manali</h3>
+                <p>Starting from ₹6,499</p>
+            </div>
+            <div class="card dest kerala">
+                <h3>Kerala</h3>
+                <p>Starting from ₹7,999</p>
+            </div>
+            <div class="card dest jaipur">
+                <h3>Jaipur</h3>
+                <p>Starting from ₹3,999</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHY US ========== -->
+    <section class="section gray">
+        <h2 class="section-title">Why Book With Us?</h2>
+        <div class="cards">
+            <div class="card why">
+                <h3>🔍 Easy Search</h3>
+                <p>Find flights and hotels in just a few clicks.</p>
+            </div>
+            <div class="card why">
+                <h3>💰 Best Prices</h3>
+                <p>Great deals and offers on every booking.</p>
+            </div>
+            <div class="card why">
+                <h3>🔒 Safe Payments</h3>
+                <p>Your payment details stay secure.</p>
+            </div>
+            <div class="card why">
+                <h3>📞 24x7 Support</h3>
+                <p>We are always here to help you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-links">
+            <div>
+                <h4>Company</h4>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Contact</a>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <a href="#">Flights</a>
+                <a href="#">Hotels</a>
+                <a href="#">Holidays</a>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <a href="#">Help Center</a>
+                <a href="#">Cancellation</a>
+                <a href="#">Refund Policy</a>
+            </div>
+        </div>
+        <p class="copy">© 2026 MakeMyTrip Clone | Frontend Project by Yash Rajput</p>
+    </footer>
+
+</body>
+</html>
